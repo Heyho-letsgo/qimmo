@@ -1,59 +1,82 @@
-<%= render 'layouts/nav' %><br>
+<%= render 'layouts/nav' %>
+<div class="container">
 
-<h1>Toutes les agences</h1>
+  <h1>Toutes les agences</h1>
 
-<%= search_form_for @search do |f| %>
-    <%= f.label :id_cont, "id" %>
+ <%= search_form_for @search do |f| %>
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Recherche d'agence</div>
 
-    <%= f.label :responsable_cont, "responsable" %>
-    <%= f.text_field :responsable_cont %>
-
-    <%= f.label :cp_cont, "Cp :" %>
-    <%= f.text_field :cp_cont %>
-
-    <%= f.label :raison_sociale_cont, "RS :" %>
-    <%= f.text_field :raison_sociale_cont %>
-
-    <%= f.label :rappelouinon_cont, "rappel :" %>
-    <%= f.select :rappelouinon_cont, ["","Oui","Non"] %>
-
-    <%= f.submit "Search" %>
+        <!-- Table -->
 
 
-<% end %>
+        <table class="table">
+          <tr>
+            <div class="row"><br>
 
-<table>
-  <tr>
-    <th><%= sort_link @search, :id, "id" %></th>
-    <th><%= sort_link @search, :raison_sociale, "Raisons sociale" %></th>
-    <th><%= sort_link @search, :responsable, "Responsable" %></th>
-    <th><%= sort_link @search, :telephone, "Téléphone" %></th>
-    <th>progouinon</th>
-    <th>created_at</th>
-    <th>updated_at</th>
-    <th>email</th>
-    <th>rappeleouinon</th>
-    <th>rappel</th>
-    <th>adresse</th>
+              <div class="span2"> <%= f.text_field :responsable_cont, :class => "form-control", :placeholder => 'Responsable' %></div>
+              <div class="span2"><%= f.text_field :cp_cont, :class => "form-control", :placeholder => 'Code postal' %></div>
+              <div class="span2"><%= f.text_field :raison_sociale_cont, :class => "form-control", :placeholder => 'Raison sociale' %></div>
+              <div class="span2"><%= f.label :rappelouinon_cont, "rappel :" %></div>
+              <div class="span2"><%= f.select :rappelouinon_cont, ["", "Oui", "Non"] %></div>
 
-    <th>cp</th>
+            </div>
+          </tr>
+          <div class="row"><br>
 
-  </tr>
-  <% @agences.each do |a| %>
+            <div class="span12"> <%= f.submit "Recherche" %></div>
+          </div>
+          <div class="row"><br>
+
+         </div>
+        </table>
+
+      </div>
+
+
+  <% end %>
+
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Liste des agences</div>
+
+    <!-- Table -->
+    <table class="table">
       <tr>
-        <td> <%= link_to a.id, a %></td>
-        <td> <%= link_to a.raison_sociale, a %></td>
-        <td> <%= a.responsable %></td>
-        <td> <%= a.telephone %></td>
-        <td> <%= a.progouinon %></td>
-        <td> <%= a.created_at %></td>
-        <td> <%= a.updated_at %></td>
-        <td> <%= a.email %></td>
-        <td> <%= a.rappelouinon %></td>
-        <td> <%= a.rappel %></td>
-        <td> <%= a.adresse %></td>
-        <td> <%= a.cp %></td>
-      </tr>
+        <th><%= sort_link @search, :id, "id" %></th>
+        <th><%= sort_link @search, :raison_sociale, "Raisons sociale" %></th>
+        <th><%= sort_link @search, :responsable, "Responsable" %></th>
+        <th><%= sort_link @search, :telephone, "Téléphone" %></th>
+        <th>progouinon</th>
+        <th>created_at</th>
+        <th>updated_at</th>
+        <th>email</th>
+        <th>rappeleouinon</th>
+        <th>rappel</th>
+        <th>adresse</th>
 
-<% end %>
+        <th>cp</th>
+
+      </tr>
+      <% @agences.each do |a| %>
+          <tr>
+            <td> <%= link_to a.id, a %></td>
+            <td> <%= link_to a.raison_sociale, a %></td>
+            <td> <%= a.responsable %></td>
+            <td> <%= a.telephone %></td>
+            <td> <%= a.progouinon %></td>
+            <td> <%= a.created_at.strftime("%d/%m/%Y") %></td>
+            <td> <%= a.updated_at.strftime("%d/%m/%Y") %></td>
+            <td> <%=  mail_to a.email,"@" if a.email !="" %></td>
+            <td> <%= a.rappelouinon %></td>
+            <td> <%= a.rappel %></td>
+            <td> <%= a.adresse   %></td>
+            <td> <%= a.cp %></td>
+          </tr>
+
+      <% end %>
     </table>
+  </div>
+  </table>
+</div>

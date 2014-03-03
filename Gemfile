@@ -37,7 +37,7 @@ gem 'bootstrap-sass'
 gem 'bootstrap-will_paginate'
 gem 'bootstrap-datepicker-rails'
 gem "event-calendar", '~> 2.3.3'
-
+gem 'rails_bootstrap_navbar'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

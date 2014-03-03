@@ -6,10 +6,13 @@
     <%= a.label :responsable %>       <%= a.text_field :responsable %><br>
     <%= a.label :telephone %>  <%= a.text_field :telephone %><br>
     <%= a.label :progouinon %>  <%= a.select :progouinon, ["Oui","Non"] %><br>
-    <%= a.label :progouinon %>  <%= a.check_box :progouinon, ["Oui","Non"] %><br>
     <%= a.label :email %>  <%= a.text_field :email %><br>
-    <%= a.label :rappelouinon %>  <%= a.text_field :rappelouinon %><br>
+    <%= a.label :rappelouinon %>
     <%= a.label :adresse %>  <%= a.text_field :adresse %><br>
     <%= a.label :cp %>  <%= a.text_field :cp %><br>
+
+    Rappeler le : | <%= a.text_field :rappelouinon %><br> | le |<%= a.datetime_select :rappel %>|<br>
+
+    <br>
     <%= a.submit %> | <br>
 <% end %>

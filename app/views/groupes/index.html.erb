@@ -14,18 +14,19 @@
 
 
 <% @groupes.each do |g| %>
-    __________________________________________________________<br>
+    <hr>
     <%= link_to g.id, g %>
-    <%= g.nom %> <br>
-    <%= g.num_rue %><br>
-    <%= g.type_voie %><br>
-    <%= mail_to g.adresse %> <br>
-    <%= g.cp %><br>
-    <%= g.tel %><br>
-    <%= g.email %><br>
-    <%= g.contact_civilite %><br>
-    <%= g.contact_prenom %><br>
-    <%= g.contact_nom %><br>
-    <%= g.siret %><br>
-
+    <%= g.nom %>
+    <%= g.num_rue %>
+    <%= mail_to g.adresse %>
+    <%= g.cp %>
+    <%= g.tel %>
+    <%= g.email %>
+    <%= g.contact_civilite %>
+    <%= g.contact_prenom %>
+    <%= g.contact_nom %>
+    <%= g.siret %>
+    <hr>
 <% end %>
+
+

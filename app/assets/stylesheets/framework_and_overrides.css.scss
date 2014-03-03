@@ -1,5 +1,7 @@
 // import the CSS framework
 @import "bootstrap";
+body { padding-top: 2px; }
+
 
 // make all images responsive by default
 img {
@@ -34,12 +36,12 @@ img {
 // to make views framework-neutral
 main {
   @extend .container;
-  background-color: #eee;
-  padding-bottom: 80px;
+  background-color: #EEE;
+  padding-bottom: 40px;
   width: 100%;
-  margin-top: 51px; // accommodate the navbar
+  margin-top: 10px; // accommodate the navbar
   }
 section {
   @extend .row;
-  margin-top: 20px;
+  margin-top: 0px;
   }
