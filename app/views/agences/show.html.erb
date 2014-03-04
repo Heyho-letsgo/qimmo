@@ -11,10 +11,10 @@ show<br>
 <%= @agence.cp %><br><br>
 <%= @agence.progouinon %><br>
 
-Rappeler : | <%= @agence.rappelouinon %>  | le |<%= @agence.rappel %>|<br>
+Rappeler : | <%= @agence.rappelouinon %>  | le |<%= @agence.rappel.strftime("%d/%m/%Y") %>|<br>
 
 
 _______________________________________________________<br>
 
-Créée le : <%= @agence.created_at %> | Maj le : <%= @agence.updated_at %><br>
+Créée le : <%= @agence.created_at.strftime("%d/%m/%Y") %> | Maj le : <%= @agence.updated_at.strftime("%d/%m/%Y") %><br>
 </div>

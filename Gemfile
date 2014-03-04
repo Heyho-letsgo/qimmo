@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'ransack'
 gem 'paperclip'
-gem 'sorcery' #
+gem 'devise'
 gem 'bootstrap-sass'
 gem 'bootstrap-will_paginate'
 gem 'bootstrap-datepicker-rails'
