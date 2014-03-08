@@ -1,5 +1,5 @@
-<%= render 'layouts/nav' %> <br>
-<%= render 'navgroupes' %>
+<div class="container">
+<%= render 'nav_groupe_show' %>
 show groupe <br>
 <%= @groupe.nom %><br>
 <%= @groupe.num_rue %><brvgr
@@ -14,8 +14,9 @@ show groupe <br>
 <%= @groupe.siret %><br>
 
 
-_______________________________________________________<br>
+<hr>
 
 Créée le : <%= @groupe.created_at %> | Maj le : <%= @groupe.updated_at %><br>
 
 
+</div>>

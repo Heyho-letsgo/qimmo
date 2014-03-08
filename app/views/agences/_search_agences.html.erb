@@ -1,0 +1,29 @@
+<div class="row"><br></div>
+<%= search_form_for @search do |f| %>
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Recherche d'agence</div>
+      <!-- Table -->
+      <table class="table">
+        <tr>
+          <div class="row"><br>
+
+            <div class="span2"> <%= f.text_field :responsable_cont, :class => "form-control", :placeholder => 'Responsable' %></div>
+            <div class="span2"><%= f.text_field :cp_cont, :class => "form-control", :placeholder => 'Code postal' %></div>
+            <div class="span2"><%= f.text_field :raison_sociale_cont, :class => "form-control", :placeholder => 'Raison sociale' %></div>
+            <div class="span2"><%= f.label :rappelouinon_cont, "rappel :" %></div>
+            <div class="span2"><%= f.select :rappelouinon_cont, ["", "Oui", "Non"] %></div>
+          </div>
+        </tr>
+        <div class="row">
+          <br>
+        </div>
+        <div class="row">
+          <div class="span12"> <%= f.submit "Recherche" %></div>
+        </div>
+        <div class="row">
+          <br>
+        </div>
+      </table>
+    </div>
+<% end %>

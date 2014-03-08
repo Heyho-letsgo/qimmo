@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140217120248) do
+ActiveRecord::Schema.define(version: 20140304101045) do
 
   create_table "agences", force: true do |t|
     t.string   "raison_sociale"
@@ -61,6 +61,19 @@ ActiveRecord::Schema.define(version: 20140217120248) do
     t.string   "mdp"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
   end
+
+  add_index "utilisateurs", ["email"], name: "index_utilisateurs_on_email", unique: true
+  add_index "utilisateurs", ["reset_password_token"], name: "index_utilisateurs_on_reset_password_token", unique: true
 
 end

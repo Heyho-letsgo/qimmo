@@ -1,20 +1,36 @@
-
 <div class="container">
-<%= render 'layouts/nav' %> <br>
-<%= render 'layouts/navagshow' %>
-show<br>
-<%= @agence.raison_sociale %><br>
-<%= @agence.responsable %><br>
-<%= @agence.telephone %><br>
-<%= mail_to @agence.email %> <br>
-<%= @agence.adresse %><br>
-<%= @agence.cp %><br><br>
-<%= @agence.progouinon %><br>
+  <%= render 'nav_agence_show' %>
+  show<br>
 
-Rappeler : | <%= @agence.rappelouinon %>  | le |<%= @agence.rappel.strftime("%d/%m/%Y") %>|<br>
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Fiche de l'agences <%= @agence.raison_sociale %></div>
 
 
-_______________________________________________________<br>
+    <table class="table">
+      <tr>
+      <div class="row">
+        <div class="span2"><%= @agence.raison_sociale %></div>
+        <div class="span2"><%= @agence.responsable %></div>
+      </div>
+      <div class="row">
+        <div class="span3">Téléphone : <%= @agence.telephone %></div>
+        <div class="span3"><%= mail_to @agence.email %></div>
+        <div class="span3"><%= @agence.adresse %> </div>
+        <div class="span3"><%= @agence.cp %></div>
+        <div class="span3"><%= @agence.progouinon %></div>
+      </div>
+     ²
+  </div>
+</div>
+
+Rappeler : | <%= @agence.rappelouinon %>  | le |<%= @agence.rappel %>|<br>
+
+<hr>
 
 Créée le : <%= @agence.created_at.strftime("%d/%m/%Y") %> | Maj le : <%= @agence.updated_at.strftime("%d/%m/%Y") %><br>
+
+
+
 </div>
+

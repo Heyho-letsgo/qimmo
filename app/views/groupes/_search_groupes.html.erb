@@ -1,0 +1,25 @@
+
+  <%= search_form_for @search do |g| %>
+      </div>
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Recherche de groupe</div>
+        <!-- Table -->
+        <table class="table">
+
+          <tr>
+
+            <div class="row"><br>
+
+              <div class="span2"> <%= g.text_field :nom_cont, :class => "form-control", :placeholder => 'Nom du groupe' %></div>
+              <div class="span2"><%= g.text_field :ville_cont, :class => "form-control", :placeholder => 'Ville' %></div>
+              <div class="offset5"></div>
+              <div class="span2"><%= g.submit "Recherche" %></div>
+            </div>
+
+          </tr>
+  <% end %>
+  </div>
+        </table>
+            <div class="row"> <br>   </div>
+</div>

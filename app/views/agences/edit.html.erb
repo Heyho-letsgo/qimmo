@@ -1,25 +1,31 @@
+<div class="container">
 <%= render 'layouts/nav' %><br>
 
 Edit Agence
 
-<%= form_for @agence do |a| %>
-    <%= a.text_field :raison_sociale %><br>
-    <%= a.text_field :responsable %><br>
+
+<%= bootstrap_form_for @agence do |a| %>
+    <%= a.text_field :raison_sociale, hide_label: :true, placeholder: "Raison sociale"  %><br>
+    <%= a.text_field :responsable, hide_label: :true, placeholder: "Responsable"  %><br>
 
     <%= a.label :progouinon %>  <%= a.select :progouinon, ["", "Oui", "Non"] %><br>
 
     <%= a.label :progouinon %>  Oui <%= a.radio_button :progouinon, ["Oui"] %> Non<%= a.radio_button :progouinon, ["Non"] %><br>
-    <%= a.text_field :email %><br>
+    <%= a.text_field :email, hide_label: :true, placeholder: "adresse mail"  %><br>
 
-    RAPPEL <%= a.label :rappelouinon %> :  <%= a.select :rappelouinon, ["", "Oui", "Non"] %><br>
+    <%= a.label :Rappeller %> :  <%= a.select :rappelouinon, ["", "Oui", "Non"] %> le
 
-    <p><%= a.label :rappelouinon, "Rappeler : " %> <%= a.check_box :rappelouinon  %> </p>
+<div class="spann2">
+    <%= a.date_select :rappel %><br>
+</div>
+ <div class="spann2">
+  <%= a.time_select :rappel %><br>
+</div>
 
-    le
-
-    <%= a.datetime_select :rappel %><br>
-    <%= a.text_field :adresse %><br>
+      <%= a.text_field :adresse %><br>
     <%= a.text_field :cp %><br>
-    <%= a.submit %>
-
+<%= a.submit "Log In", class: "btn btn-success" %>
+    <%= a.submit 'Maj', class: "btn btn-success" %>
 <% end %>
+
+</div>

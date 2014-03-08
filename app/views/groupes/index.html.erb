@@ -1,32 +1,7 @@
-<%=	 render 'layouts/nav' %>
-<h1>Bienvenue Liste des Groupes</h1>
 
-<%= search_form_for @search do |g| %>
-
-    <%= g.label :nom_cont, "Nom" %>
-    <%= g.text_field :nom_cont %>
-
-    <%= g.label :ville_cont, "Ville" %>
-    <%= g.text_field :ville_cont %>
-
-    <%= g.submit "Search" %>
-    <% end %>
-
-
-<% @groupes.each do |g| %>
-    <hr>
-    <%= link_to g.id, g %>
-    <%= g.nom %>
-    <%= g.num_rue %>
-    <%= mail_to g.adresse %>
-    <%= g.cp %>
-    <%= g.tel %>
-    <%= g.email %>
-    <%= g.contact_civilite %>
-    <%= g.contact_prenom %>
-    <%= g.contact_nom %>
-    <%= g.siret %>
-    <hr>
-<% end %>
-
+<div class="container">
+<%= render 'nav_groupes_index' %>
+<%= render 'search_groupes' %>
+<%= render 'liste_groupes'%>
+</div>
 

@@ -1,0 +1,18 @@
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Liste des groupes</div>
+
+  <!-- Table -->
+  <table class="table">
+    <tr>
+      <th><%= sort_link @search, :id, "id" %></th>
+      <th><%= sort_link @search, :nom, "Nom" %></th>
+    </tr>
+    <% @groupes.each do |g| %>
+        <tr>
+          <td> <%= link_to g.id, g %></td>
+          <td> <%= link_to g.nom, g %> <br>Crée le <%= g.created_at.strftime("%d/%m/%Y") %><br>Maj.le : <%= g.updated_at.strftime("%d/%m/%Y") %></td>
+        </tr>
+    <% end %>
+  </table>
+</div>
