@@ -1,6 +1,8 @@
 <div class="container">
-<%= render 'nav_agences_index' %>
-<%= paginate @agences %>
+
+  <%= render 'nav_agences_index' %>
+  <%= render 'search_agences'%>
+  <%= paginate @agences %>
 <%= render 'liste_agence'%>
-<%= render 'search_agences'%>
+
 </div>

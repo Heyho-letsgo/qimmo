@@ -36,6 +36,7 @@ gem 'bootstrap-sass'
 # gem 'bootstrap-will_paginate'
 gem 'rails_bootstrap_navbar'
 gem 'kaminari'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -46,6 +47,7 @@ gem 'pg', group: :production
 
 
 group :development do
+  gem 'pry'
   gem 'rails_layout'
 end
 

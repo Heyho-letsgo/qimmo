@@ -20,7 +20,6 @@
         </div>
         <div class="row">
           <div class="span1"> <%= f.submit "Recherche" %> </div>
-          <div class="span2"> <%= f.submit "75018" %></div>
           <div class="offset9"></div>
         </div>
         <div class="row">
@@ -28,4 +27,15 @@
         </div>
       </table>
     </div>
+<% end %>
+
+<%= search_form_for @search do |f| %>
+    <%= f.text_field :cp_cont, value: "75018", hidden: true %>
+    <%= f.submit "75018" %>
+<% end %>
+
+
+<%= search_form_for @search, method: "get" do |f| %>
+    <%= f.text_field :cp_cont, value: "75018", hidden: true %>
+    <%= f.submit "75018" %>
 <% end %>

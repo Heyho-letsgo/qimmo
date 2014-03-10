@@ -5,47 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e859d070-bd7f-49f3-8a60-7d237ca356d2" name="Default" comment="Avant la branche recherche">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140308211703_create_users.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/admin-extra.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/elevate.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/mapping-ISOLatin1Accent.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/protwords.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/schema.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/scripts.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/solrconfig.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/spellings.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/stopwords.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/conf/synonyms.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/default/data/index/segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/default/data/index/segments_1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/segments_1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/pids/development/sunspot-solr-development.pid" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/solr.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/test/data/index/segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/test/data/index/segments_1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/users.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/utilisateurs.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/user_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/models/utilisateur_test.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/agences/_liste_agence.html.erb" afterPath="$PROJECT_DIR$/app/views/agences/_liste_agence.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/agences/_nav_agences_index.html.erb" afterPath="$PROJECT_DIR$/app/views/agences/_nav_agences_index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/agences/_search_agences.html.erb" afterPath="$PROJECT_DIR$/app/views/agences/_search_agences.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/agence.rb" afterPath="$PROJECT_DIR$/app/models/agence.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/agences_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/agences_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/agences/index.html.erb" afterPath="$PROJECT_DIR$/app/views/agences/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/utilisateurs/index.html.erb" afterPath="$PROJECT_DIR$/app/views/utilisateurs/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/qimmo.iml" afterPath="$PROJECT_DIR$/.idea/qimmo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/utilisateur.rb" afterPath="$PROJECT_DIR$/app/models/utilisateur.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/utilisateurs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/utilisateurs_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="qimmo.iws" />
@@ -82,16 +48,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="962" selection-end="962" vertical-scroll-proportion="-7.148148" vertical-offset="362" max-vertical-offset="1020">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="895" column="16" selection-start="17558" selection-end="17558" vertical-scroll-proportion="-8.137255" vertical-offset="13010" max-vertical-offset="16995">
+            <state line="48" column="21" selection-start="1143" selection-end="1143" vertical-scroll-proportion="-7.7777777" vertical-offset="510" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
@@ -100,9 +57,9 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/agences/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="24" selection-end="57" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="165">
+            <state line="3" column="31" selection-start="92" selection-end="92" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="195">
               <folding>
-                <marker date="1394400613489" expanded="true" signature="22:146" placeholder="..." />
+                <marker date="1394459170534" expanded="true" signature="22:154" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -117,39 +74,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mime_types.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/mime_types.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="agences_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/agences_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="agences_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="agences_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/agences_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="6" selection-start="95" selection-end="95" vertical-scroll-proportion="0.124223605" vertical-offset="30" max-vertical-offset="810">
+            <state line="7" column="37" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_search_agences.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_search_agences.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/agences/_search_agences.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="42" selection-start="1080" selection-end="1080" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="540">
+            <state line="34" column="9" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.34545454" vertical-offset="415" max-vertical-offset="690">
               <folding>
-                <marker date="1394451111858" expanded="true" signature="1175:1205" placeholder="..." />
+                <marker date="1394460789806" expanded="true" signature="98:1323" placeholder="..." />
+                <marker date="1394460789806" expanded="true" signature="243:1173" placeholder="..." />
+                <marker date="1394460789806" expanded="true" signature="256:889" placeholder="..." />
+                <marker date="1394460789806" expanded="true" signature="284:875" placeholder="..." />
+                <marker date="1394460789806" expanded="true" signature="915:945" placeholder="..." />
+                <marker date="1394460789806" expanded="true" signature="971:1117" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -240,12 +184,12 @@
         <option value="$PROJECT_DIR$/app/views/groupes/edit.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/kaminari.rb" />
         <option value="$PROJECT_DIR$/app/views/agences/_liste_agence.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/agences/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/app/views/agences/_nav_agences_index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/agences/_search_agences.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/agences/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/agences_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/agences/_search_agences.html.erb" />
       </list>
     </option>
   </component>
@@ -1180,7 +1124,7 @@
     <layout>
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="99" y="96" width="1082" height="605" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17158931" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49226442" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959327" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1205,7 +1149,7 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="99" y="96" width="1082" height="605" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54711676" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.209564" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32678822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1571,35 +1515,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="962" selection-end="962" vertical-scroll-proportion="-7.148148" vertical-offset="362" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/agences/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="24" selection-end="57" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="165">
-          <folding>
-            <marker date="1394400613489" expanded="true" signature="22:146" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="895" column="16" selection-start="17558" selection-end="17558" vertical-scroll-proportion="-8.137255" vertical-offset="13010" max-vertical-offset="16995">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/agences/_search_agences.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="42" selection-start="1080" selection-end="1080" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="540">
-          <folding>
-            <marker date="1394451111858" expanded="true" signature="1175:1205" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1610,10 +1529,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="21" selection-start="1143" selection-end="1143" vertical-scroll-proportion="-7.7777777" vertical-offset="510" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/agences/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="31" selection-start="92" selection-end="92" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="195">
+          <folding>
+            <marker date="1394459170534" expanded="true" signature="22:154" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/agences_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="95" selection-end="95" vertical-scroll-proportion="0.124223605" vertical-offset="30" max-vertical-offset="810">
+        <state line="7" column="37" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="960">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/agences/_search_agences.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="9" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.34545454" vertical-offset="415" max-vertical-offset="690">
+          <folding>
+            <marker date="1394460789806" expanded="true" signature="98:1323" placeholder="..." />
+            <marker date="1394460789806" expanded="true" signature="243:1173" placeholder="..." />
+            <marker date="1394460789806" expanded="true" signature="256:889" placeholder="..." />
+            <marker date="1394460789806" expanded="true" signature="284:875" placeholder="..." />
+            <marker date="1394460789806" expanded="true" signature="915:945" placeholder="..." />
+            <marker date="1394460789806" expanded="true" signature="971:1117" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
