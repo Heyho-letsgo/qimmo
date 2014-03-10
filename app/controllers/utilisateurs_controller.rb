@@ -1,7 +1,7 @@
 class UtilisateursController < ApplicationController
 
   def index
-    @utils = Utilisateur.all
+    @utilisateurs = Utilisateur.all
   end
 
 end

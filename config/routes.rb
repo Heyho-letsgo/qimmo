@@ -2,18 +2,18 @@ Qimmo::Application.routes.draw do
 
 
 
+  resources :users
+
   root "bienvenues#index"
   #resources :bienvenues
 
 
   resources :groupes
 
-  resources :utilisateurs
-
   resources :programmes
 
   resources :agences
-
+  resources :utilisateurs
 
 
   # The priority is based upon order of creation: first created -> highest priority.

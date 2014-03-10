@@ -1,4 +1,4 @@
-<div class="row"><br></div>
+<div class="row"></div>
 <%= search_form_for @search do |f| %>
     <div class="panel panel-default">
       <!-- Default panel contents -->
@@ -19,7 +19,9 @@
           <br>
         </div>
         <div class="row">
-          <div class="span12"> <%= f.submit "Recherche" %></div>
+          <div class="span1"> <%= f.submit "Recherche" %> </div>
+          <div class="span2"> <%= f.submit "75018" %></div>
+          <div class="offset9"></div>
         </div>
         <div class="row">
           <br>

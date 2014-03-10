@@ -3,10 +3,11 @@ class AgencesController < ApplicationController
 
 
   def index
+   # raise params.inspect
+    # params[:code_postal]
     @search = Agence.search(params[:q])
-    @agences = @search.result
+    @agences = @search.result.page(params[:page]).per(5)
   end
-
 
   def show
     @agence = Agence.find(params[:id])
