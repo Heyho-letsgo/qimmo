@@ -3,4 +3,7 @@
   <data-source source="LOCAL" name="Rails qimmo: development" uuid="172c96ec-e093-4837-9c6f-4a3ca3a432ce">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails qimmo: test" uuid="35a87f58-a7fd-4c37-9a7d-bd8b6fe04e40">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>

@@ -1,0 +1,9 @@
+<%= form_for @codepostal do |f| %>
+<%= f.inputs do %>
+    <%= f.input :code %>
+<% end %>
+
+<%= f.actions do %>
+<%= f.action :submit, :as => :input %>
+<% end %>
+<% end %>

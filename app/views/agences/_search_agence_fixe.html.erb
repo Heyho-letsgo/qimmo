@@ -1,0 +1,24 @@
+<div class="table"
+<div classs="row">
+
+  <div class="span1">
+    <%= search_form_for @search, method: "get" do |f| %>
+        <%= f.text_field :cp_cont, value: "75018", hidden: true %>
+        <%= f.submit "75018" %>
+    <% end %>
+  </div>
+  <div class="span1">
+    <%= search_form_for @search, method: "get" do |f| %>
+        <%= f.text_field :cp_cont, value: "75017", hidden: true %>
+        <%= f.submit "75017" %>
+    <% end %>
+  </div>
+  <div class="span1 ">
+    <%= search_form_for @search, method: "get" do |f| %>
+        <%= f.text_field :telephone_cont, value: "0745545566", hidden: true %>
+        <%= f.submit "0745545566" %>
+    <% end %>
+  </div>
+  <div class="offset9"></div>
+</div>
+</div>

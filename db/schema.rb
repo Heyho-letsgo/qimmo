@@ -11,7 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140308211703) do
+ActiveRecord::Schema.define(version: 20140312105710) do
+
+  create_table "acquereurs", force: true do |t|
+    t.string   "origine_rech"
+    t.string   "civilite"
+    t.string   "prenom"
+    t.string   "nom"
+    t.string   "num_rue"
+    t.string   "type_rue"
+    t.string   "adresse"
+    t.string   "cp"
+    t.string   "ville"
+    t.string   "tel_princ"
+    t.string   "tel_type"
+    t.string   "email_princ"
+    t.string   "email_type"
+    t.string   "fax_princ"
+    t.string   "r_cp"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "agences", force: true do |t|
     t.string   "raison_sociale"
@@ -28,6 +48,12 @@ ActiveRecord::Schema.define(version: 20140308211703) do
   end
 
   create_table "bienvenues", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "codepostals", force: true do |t|
+    t.string   "code"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -56,34 +82,11 @@ ActiveRecord::Schema.define(version: 20140308211703) do
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
-    t.string   "civilite"
-    t.string   "nom"
-    t.string   "prenom"
-    t.string   "telephone"
-    t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "utilisateurs", force: true do |t|
     t.string   "nom"
     t.string   "mdp"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
   end
-
-  add_index "utilisateurs", ["email"], name: "index_utilisateurs_on_email", unique: true
-  add_index "utilisateurs", ["reset_password_token"], name: "index_utilisateurs_on_reset_password_token", unique: true
 
 end

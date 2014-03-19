@@ -11,7 +11,7 @@ class AgencesController < ApplicationController
 
   def search75018
     #params[:cp]="75018"
-    binding.pry
+
     @search = Agence.where(params[:q])
     @agences = @search.result.page(params[:page]).per(5)
   end

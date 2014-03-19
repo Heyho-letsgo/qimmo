@@ -1,17 +1,14 @@
 Qimmo::Application.routes.draw do
 
+  resources :codepostals
 
+  resources :acquereurs
 
-  resources :users
-
+  #resources :users
   root "bienvenues#index"
   #resources :bienvenues
-
-
   resources :groupes
-
   resources :programmes
-
   resources :agences
   resources :utilisateurs
 

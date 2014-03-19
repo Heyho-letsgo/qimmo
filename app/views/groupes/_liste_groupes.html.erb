@@ -1,18 +1,55 @@
+<%= stylesheet_link_tag("http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css") %>
+<%= javascript_include_tag("http://code.jquery.com/jquery-1.9.1.js") %>
+<%= javascript_include_tag("http://code.jquery.com/ui/1.10.4/jquery-ui.js") %>
+
+
+
+
+
+
+
+
+
 <div class="panel panel-default">
   <!-- Default panel contents -->
   <div class="panel-heading">Liste des groupes</div>
 
   <!-- Table -->
   <table class="table">
+    <div class="row">
     <tr>
       <th><%= sort_link @search, :id, "id" %></th>
       <th><%= sort_link @search, :nom, "Nom" %></th>
+      <th><%= "Ville" %></th>
+      <th><%= "nr" %></th>
+      <th><%= "Voie" %></th>
+      <th><%= "Adresse" %></th>
+      <th><%= "cp" %></th>
     </tr>
     <% @groupes.each do |g| %>
         <tr>
-          <td> <%= link_to g.id, g %></td>
-          <td> <%= link_to g.nom, g %> <br>Crée le <%= g.created_at.strftime("%d/%m/%Y") %><br>Maj.le : <%= g.updated_at.strftime("%d/%m/%Y") %></td>
+       <td> <%= link_to g.id, g %> |
+            Crée le <%= g.created_at.strftime("%d/%m/%y") %> | Maj.le : <%= g.updated_at.strftime("%d/%m/%y") %>
+          </td>
+          <td> <%= link_to g.nom, g %></td>
+          <td> <div class="hover"><%= g.ville %></div></td>
+          <td> <%= g.num_rue %></td>
+          <td> <%= g.type_voie %></td>
+          <td> <%= g.adresse %></td>
+          <td> <%= g.cp %></td>
+
+
+
+
+
+
+
         </tr>
     <% end %>
+    </div>
   </table>
+
+
+
+
 </div>

@@ -2,13 +2,13 @@
 <%= search_form_for @search do |f| %>
     <div class="panel panel-default">
       <!-- Default panel contents -->
-      <div class="panel-heading">Recherche d'agence</div>
+      <div class="panel-heading"><%= render 'nav_agences_index'%></div>
       <!-- Table -->
       <table class="table">
         <tr>
           <div class="row"><br>
 
-            <div class="span2"> <%= f.text_field :responsable_cont, :class => "form-control", :placeholder => 'Responsable' %></div>
+            <div class="span2"><%= f.text_field :responsable_cont, :class => "form-control", :placeholder => 'Responsable' %></div>
             <div class="span2"><%= f.text_field :cp_cont, :class => "form-control", :placeholder => 'Code postal' %></div>
             <div class="span2"><%= f.text_field :raison_sociale_cont, :class => "form-control", :placeholder => 'Raison sociale' %></div>
             <div class="span2"><%= f.label :rappelouinon_cont, "rappel :" %></div>
@@ -29,13 +29,5 @@
     </div>
 <% end %>
 
-<%= search_form_for @search do |f| %>
-    <%= f.text_field :cp_cont, value: "75018", hidden: true %>
-    <%= f.submit "75018" %>
-<% end %>
 
 
-<%= search_form_for @search, method: "get" do |f| %>
-    <%= f.text_field :cp_cont, value: "75018", hidden: true %>
-    <%= f.submit "75018" %>
-<% end %>

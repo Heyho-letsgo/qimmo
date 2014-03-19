@@ -1,12 +1,21 @@
 <%= render 'layouts/nav' %><br>
 
-
 Edit groupe : <%= @groupe.id %><br>
 <%= form_for @groupe do |g| %>
+    <div class="span12">
+         <div class="span4"> <%= g.label :nom, 'Nom :' %>
+          <%= g.text_field :nom %>
 
-    <%= g.label :nom, 'Nom :' %>  <%= g.text_field :nom %><br>
-    <%= g.label :num_rue, 'num_rue :' %> <%= g.text_field :num_rue %><br>
-    <%= g.label :type_voie, 'type_voie :' %> <%= g.text_field :type_voie %><br>
+        <div class="span4"> <%= g.label :nom, 'Nom :' %>
+         <%= g.text_field :nom %>
+
+        <div class="span4"> <%= g.label :nom, 'Nom :' %>
+          <%= g.text_field :nom %>
+        </div>
+    </div>
+
+
+    <hr><br><br><br>
     <%= g.label :adresse, 'adresse :' %> <%= g.text_field :adresse %><br>
     <%= g.label :cp, 'cp :' %> <%= g.text_field :cp %><br>
     <%= g.label :ville, 'ville :' %> <%= g.text_field :ville %><br>
