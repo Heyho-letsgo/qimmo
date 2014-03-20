@@ -23,9 +23,9 @@ namespace :dev_data do
                      type_voie: "rue",
                      adresse: "adresse#{i+1}",
                      cp: "75#{i+1}",
-                     ville: "Paris",
+                     ville: "Paris#{i+1}",
                      tel: "075177006#{i+1}",
-
+                     pays:"France#{i+1}"
 
 
 

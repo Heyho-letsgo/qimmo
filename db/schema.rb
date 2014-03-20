@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140312105710) do
+ActiveRecord::Schema.define(version: 20140320092632) do
 
   create_table "acquereurs", force: true do |t|
     t.string   "origine_rech"
@@ -74,6 +74,7 @@ ActiveRecord::Schema.define(version: 20140312105710) do
     t.string   "siret"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "pays"
   end
 
   create_table "programmes", force: true do |t|

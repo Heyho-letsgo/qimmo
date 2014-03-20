@@ -1,0 +1,40 @@
+<%= render 'layouts/nav' %><br>
+
+Edit groupe : <%= @groupe.id %><br>
+<%= form_for @groupe do |g| %>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="col-sm-6"><%= g.label :nom, 'Nom :' %></div>
+        <div class="col-sm-6"><%= g.text_field :nom %></div>
+      </div>
+      </div>
+    <div class="row>">
+     <div class="col-sm-4">
+       <div class="col-sm-6"><%= g.label :adresse, 'adresse :' %></div>
+       <div class="col-sm-6"> <%= g.text_field :adresse %></div></div>
+      <div class="col-sm-4">a</div>
+      <div class="col-sm-4">a</div>
+      <div class="col-sm-4">...</div>
+      <div class="col-sm-6"><%= g.label :cp, 'cp :' %></div>
+      <div class="col-sm-6"><%= g.text_field :cp %> </div>
+    </div>
+      <div class="col-sm-4">b</div>
+
+    </div>
+
+    <hr><br><br><br>
+    <%= g.label :adresse, 'adresse :' %> <%= g.text_field :adresse %><br>
+    <%= g.label :ville, 'ville :' %> <%= g.text_field :ville %><br>
+    <%= g.label :cp, 'cp :' %> <%= g.text_field :cp %><br>
+    <%= g.label :tel, 'tel :' %> <%= g.text_field :tel %><br>
+    <%= g.label :email, 'email :' %><%= g.text_field :email %><br>
+    <%= g.label :contact_civilite, 'contact_civilite :' %> <%= g.text_field :contact_civilite %><br>
+    <%= g.label :contact_prenom, 'contact_prenom :' %>  <%= g.text_field :contact_prenom %><br>
+    <%= g.label :contact_nom, 'contact_nom :' %> <%= g.text_field :contact_nom %><br>
+    <%= g.label :siret, 'siret :' %> <%= g.text_field :siret %><br>
+
+
+
+    <%= g.submit %>
+
+<% end %>

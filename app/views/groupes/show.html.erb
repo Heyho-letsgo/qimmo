@@ -17,7 +17,7 @@ show groupe <br>
 
 <hr>
 
-Créée le : <%= @groupe.created_at %> | Maj le : <%= @groupe.updated_at %><br>
+Créée le : <%= @groupe.created_at.strftime("%d/%m/%y") %> | Maj le : <%= @groupe.updated_at.strftime("%d/%m/%y") %><br>
 
 
-</div>>
+</div>
