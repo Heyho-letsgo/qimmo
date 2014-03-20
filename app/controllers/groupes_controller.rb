@@ -34,6 +34,7 @@ class GroupesController < ApplicationController
 
 
   def update
+    
     # Dans un premier temps, on réactive la donnée concernée
     @groupe = Groupe.find(params[:id])
 

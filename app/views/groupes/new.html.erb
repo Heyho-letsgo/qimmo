@@ -1,14 +1,5 @@
 <h1>Nouveau groupe</h1>
-
-
-<%= form_for @groupe do |g| %>
-
-    <%= g.label :nom  %>  <%= g.text_field :nom %><br>
-
-
-    <%= g.submit %> | <br>
-<% end %>
-
+<%= render 'new_edit_groupe' %>
 
 
 

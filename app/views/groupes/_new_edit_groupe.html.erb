@@ -1,0 +1,99 @@
+<div class="container">
+  <%= form_for @groupe do |g| %>
+
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="col-md-6"><%= g.label :nom, 'Nom :' %></div>
+          <div class="col-md-6"><%= g.text_field :nom %></div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="col-md-6"></div>
+          <div class="col-md-6"></div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="col-md-6"></div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="col-md-6"><%= g.label :contact_civilite, 'contact_civilite :' %></div>
+          <div class="col-md-6"><%= g.text_field :contact_civilite %></div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="col-md-6"><%= g.label :contact_prenom, 'contact_prenom :' %></div>
+          <div class="col-md-6"><%= g.text_field :contact_prenom %></div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="col-md-6"><%= g.label :contact_nom, 'contact_nom :' %></div>
+          <div class="col-md-6"><%= g.text_field :contact_nom %></div>
+        </div>
+
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="col-md-6"><%= g.label :tel, 'tel :' %> </div>
+          <div class="col-md-6"><%= g.text_field :tel %></div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="col-md-6">
+            <%= g.label :email, 'email :' %></div>
+          <div class="col-md-6"><%= g.text_field :email %></div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="col-md-6"></div>
+          <div class="col-md-6"></div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="col-md-6"><%= g.label :num_rue, 'Num :' %></div>
+          <div class="col-md-6"><%= g.text_field :num_rue %></div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="col-md-6"><%= g.label :type_voie, 'Type de voie :' %></div>
+          <div class="col-md-6"><%= g.text_field :type_voie %></div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="col-md-6"><%= g.label :adresse, 'adresse :' %></div>
+          <div class="col-md-6"><%= g.text_field :adresse %></div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="col-md-6"><%= g.label :cp, 'cp :' %></div>
+          <div class="col-md-6"><%= g.text_field :cp %> </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="col-md-6"><%= g.label :ville, 'ville :' %></div>
+          <div class="col-md-6"><%= g.text_field :ville %> </div>
+        </div>
+        <div class="col-md-4">
+          <div class="col-md-6"><%= g.label :pays, 'Pays :' %></div>
+          <div class="col-md-6"><%= g.text_field :pays %></div>
+        </div>
+
+
+      </div>
+
+
+      <%= g.submit %>
+
+  <% end %>
+</div>

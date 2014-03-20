@@ -1,23 +1,19 @@
 <div class="container">
 <%= render 'nav_groupe_show' %>
-show groupe <br>
+<h1>show groupe </h1>
+
 <%= @groupe.nom %><br>
-<%= @groupe.num_rue %><brvgr
-<%= @groupe.type_voie %><br>
-<%= @groupe.adresse %> <br>
-<%= @groupe.cp %><br>
-  <%= @groupe.ville %><br>
-<%= @groupe.tel %><br><br>
-<%= mail_to @groupe.email %><br>
+<%= @groupe.num_rue %> <%= @groupe.type_voie %> <%= @groupe.adresse %><br>
+<%= @groupe.cp %> <%= @groupe.ville %><br>
+<%= @groupe.pays %><br><br>
+
+Téléphone : <%= @groupe.tel %><br>
+Mail : <%= mail_to @groupe.email %><br>
+<br>
 <%= @groupe.contact_civilite %><br>
 <%= @groupe.contact_prenom %><br>
 <%= @groupe.contact_nom %><br>
 <%= @groupe.siret %><br>
 
+  Créée le : <%= @groupe.created_at.strftime("%d/%m/%y") %> | Maj le : <%= @groupe.updated_at.strftime("%d/%m/%y") %><br>
 
-<hr>
-
-Créée le : <%= @groupe.created_at.strftime("%d/%m/%y") %> | Maj le : <%= @groupe.updated_at.strftime("%d/%m/%y") %><br>
-
-
-</div>

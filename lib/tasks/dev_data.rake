@@ -17,18 +17,21 @@ namespace :dev_data do
 
     Groupe.delete_all
     (0..5).each do |i|
-      Groupe.create!(nom: "Pierre#{i+1}",
-                     ville: "Paris#{i+1}",
-                     num_rue: "#{i+1}",
-                     type_voie: "rue",
-                     adresse: "adresse#{i+1}",
-                     cp: "75#{i+1}",
-                     ville: "Paris#{i+1}",
-                     tel: "075177006#{i+1}",
-                     pays:"France#{i+1}"
-
-
-
+      Groupe.create!(
+          nom: "Groupe Pierre Habitat #{i+1}",
+          ville: "Paris#{i+1}",
+          num_rue: "#{i+1}",
+          type_voie: "rue",
+          adresse: "adresse#{i+1}",
+          cp: "75#{i+1}",
+          ville: "Paris#{i+1}",
+          tel: "075177006#{i+1}",
+          email:"test@#{i+1}",
+          pays: "France#{i+1}",
+          contact_civilite: "Monsieur#{i+1}",
+          contact_prenom: "Paul#{i+1}",
+          contact_nom: "Numan#{i+1}",
+          siret:"679987678890-#{i+1}"
 
 
       )
