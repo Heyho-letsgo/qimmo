@@ -47,8 +47,10 @@ gem 'pg', group: :production
 
 
 group :development do
-  gem 'pry'
+  gem 'jazz_hands'
   gem 'rails_layout'
+  gem 'quiet_assets'
+  gem 'annotate'
 end
 
 # Use ActiveModel has_secure_password
