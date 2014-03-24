@@ -38,10 +38,11 @@ gem 'protected_attributes' # https://github.com/rails/protected_attributes
 gem 'rails_bootstrap_navbar'
 gem 'kaminari'
 
-gem 'jazz_hands'
-gem 'quiet_assets'
-gem 'annotate'
-
+gem 'jazz_hands' # permet d'afficher de façon organisée les lignes de la consoles https://github.com/nixme/jazz_hands
+gem 'quiet_assets' # allège l'affichage des données du terminal https://github.com/evrone/quiet_assets
+gem 'annotate' # La gem Annotate permet d'annoter certains fichiers automatiquement. Par exemple, pour les models,
+# elle va automatiquement détecter les colonnes créées dans la table associée au model et ajouter des
+# informations utiles, en commentaires, dans le fichier du model https://github.com/ctran/annotate_models
 
 
 group :doc do
