@@ -1,5 +1,5 @@
 class Groupe < ActiveRecord::Base
-
+  validates_presence_of :cp
   has_many :agences
 
 =begin
@@ -19,7 +19,6 @@ class Groupe < ActiveRecord::Base
                   :siret
 =end
 
-  validates :cp, presence: true
 
 
 end

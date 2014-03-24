@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140320092632) do
+ActiveRecord::Schema.define(version: 20140324121720) do
 
   create_table "acquereurs", force: true do |t|
     t.string   "origine_rech"
@@ -45,6 +45,13 @@ ActiveRecord::Schema.define(version: 20140320092632) do
     t.string   "adresse"
     t.string   "cp"
     t.datetime "rappel"
+    t.string   "type_soc"
+    t.integer  "capital"
+    t.integer  "gar_fi"
+    t.string   "secteur"
+    t.integer  "marge_surf_agence"
+    t.integer  "marge_prix_agence"
+    t.string   "logo"
   end
 
   create_table "bienvenues", force: true do |t|

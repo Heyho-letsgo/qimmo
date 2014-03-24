@@ -6,7 +6,6 @@ gem 'rails', '4.0.2'
 # Use sqlite3 as the database for Active Record
 
 
-
 gem 'sqlite3', group: :development
 
 # Use SCSS for stylesheets
@@ -38,9 +37,12 @@ gem 'protected_attributes' # https://github.com/rails/protected_attributes
 gem 'rails_bootstrap_navbar'
 gem 'kaminari'
 
-gem 'jazz_hands' # permet d'afficher de façon organisée les lignes de la consoles https://github.com/nixme/jazz_hands
-gem 'quiet_assets' # allège l'affichage des données du terminal https://github.com/evrone/quiet_assets
-gem 'annotate' # La gem Annotate permet d'annoter certains fichiers automatiquement. Par exemple, pour les models,
+gem 'jazz_hands'
+# jazz hand permet d'afficher de façon organisée les lignes de la consoles https://github.com/nixme/jazz_hands
+gem 'quiet_assets'
+# quiet asset allège l'affichage des données du terminal https://github.com/evrone/quiet_assets
+gem 'annotate'
+# La gem Annotate permet d'annoter certains fichiers automatiquement. Par exemple, pour les models,
 # elle va automatiquement détecter les colonnes créées dans la table associée au model et ajouter des
 # informations utiles, en commentaires, dans le fichier du model https://github.com/ctran/annotate_models
 
@@ -51,7 +53,6 @@ group :doc do
 end
 
 gem 'pg', group: :production
-
 
 
 group :development do
