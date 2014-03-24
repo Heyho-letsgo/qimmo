@@ -1,8 +1,10 @@
 <div class="container">
 <%= render 'nav_groupe_show' %>
 <h1>show groupe </h1>
+"
 
-<%= @groupe.nom %><br>
+
+  <%= @groupe.nom %><br>
 <%= @groupe.num_rue %> <%= @groupe.type_voie %> <%= @groupe.adresse %><br>
 <%= @groupe.cp %> <%= @groupe.ville %><br>
 <%= @groupe.pays %><br><br>
@@ -17,3 +19,4 @@ Mail : <%= mail_to @groupe.email %><br>
 
   Créée le : <%= @groupe.created_at.strftime("%d/%m/%y") %> | Maj le : <%= @groupe.updated_at.strftime("%d/%m/%y") %><br>
 
+</div>

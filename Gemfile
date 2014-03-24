@@ -29,13 +29,20 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
-
 gem 'ransack'
 gem 'bootstrap_form'
 gem 'bootstrap-sass'
-# gem 'bootstrap-will_paginate'
+gem 'protected_attributes' # https://github.com/rails/protected_attributes
+
+
 gem 'rails_bootstrap_navbar'
 gem 'kaminari'
+
+gem 'jazz_hands'
+gem 'quiet_assets'
+gem 'annotate'
+
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

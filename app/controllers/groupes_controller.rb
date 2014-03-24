@@ -2,7 +2,7 @@ class GroupesController < ApplicationController
 
   def index
     @search = Groupe.search(params[:q])
-    @groupes = @search.result
+    @groupes = @search.result.page(params[:page]).per(5)
   end
 
   def edit
@@ -34,7 +34,7 @@ class GroupesController < ApplicationController
 
 
   def update
-    
+#binding pry
     # Dans un premier temps, on réactive la donnée concernée
     @groupe = Groupe.find(params[:id])
 
