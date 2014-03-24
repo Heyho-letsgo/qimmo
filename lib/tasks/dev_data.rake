@@ -12,8 +12,14 @@ namespace :dev_data do
         email: 'adresse@.com',
         adresse: '55 rue Bélliard',
         cp: '75018',
-        rappel: '')
-
+        rappel: '',
+        type_soc: 'Sarl',
+        capital: 10000,
+        gar_fi: 50000,
+        secteur: 'Abbesses',
+        marge_surf_agence: 10,
+        marge_prix_agence: 10,
+        logo: 'Upload du logo')
 
     Groupe.delete_all
     (0..5).each do |i|
