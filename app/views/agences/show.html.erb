@@ -1,10 +1,9 @@
 <div class="container" xmlns="http://www.w3.org/1999/html">
   <%= render 'nav_agence_show' %>
-  <h1>Show</h1><br>
 
   <div class="panel panel-default">
     <!-- Default panel contents -->
-    <div class="panel-heading">Fiche de l'agences <%= @agence.raison_sociale %></div>
+    <div class="panel-heading"><h1>Fiche de l'agences <%= @agence.raison_sociale %></h1></div>
 
 
     <table class="table">
@@ -45,23 +44,25 @@
   </table>
 
 </div>
+
+
 <% # formatage des nombres http://api.rubyonrails.org/classes/ActionView/Helpers/NumberHelper.html#method-i-number_to_currency %>
 <div class="panel panel-default">
-  <!-- Default panel contents -->
   <div class="panel-heading">Critères de recherche prédéfinis.</div>
-  <table class="table">
-    <div class="row">
-      <div class="span3">Secteur : <%= @agence.secteur %></div>
-      <div class="span3">% de recherche sur surface (+/-) : <%=  number_to_percentage(@agence.marge_surf_agence, locale: :fr, precision: 0) %></div>
-      <div class="span3">% de recherche sur prix (+/-) : <%=  number_to_percentage(@agence.marge_prix_agence, locale: :fr, precision: 0) %></div>
-    </div>
-    <div class="row">
-      <div class="span12"></div>
-    </div>
-  </table>
-
-</div>
-
+        <div class="panel-heading">Secteurs.</div>
+            <div class="row">
+                <div class="span12"><%= @agence.secteur %></div>
+            </div>
+    <div class="panel-heading">Code postaux.</div>
+          <div class="row">
+            <div class="span12">75018</div>
+          </div>
+    <div class="panel-heading">Pourcentage de recherche sur .</div>
+        <div class="row">
+          <div class="span3">Surface : <%=  number_to_percentage(@agence.marge_surf_agence, locale: :fr, precision: 0) %></div>
+          <div class="span3">Prix : <%=  number_to_percentage(@agence.marge_prix_agence, locale: :fr, precision: 0) %></div>
+        </div>
+ </div>
 
 
 
@@ -76,17 +77,11 @@
 
   <table class="table">
     <div class="row">
-      <div class="span12"> Rappeler : | <%= @agence.rappelouinon %>  | le |<%= @agence.rappel %>|
-      </div>
-    </div>
-    <div class="row">
-      <div class="span12">
-        Créée le : <%= @agence.created_at.strftime("%d/%m/%Y") %> | Maj le
-        : <%= @agence.updated_at.strftime("%d/%m/%Y") %>
-        <br>
-      </div>
+      <div class="span12">Rappeler : <%= @agence.rappelouinon %> le <%= @agence.rappel.strftime("%d/%m/%y") %> Créée le : <%= @agence.created_at.strftime("%d/%m/%y") %> Maj le : <%= @agence.updated_at.strftime("%d/%m/%y") %>
     </div>
   </table>
+</div>
+
 
 </div>
 </div>

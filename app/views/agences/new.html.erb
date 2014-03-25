@@ -1,26 +1,5 @@
 <div class="container">
-  <div class="row">
-    <h1 class="text-left">Nouvelle agence</h1>
-
-    <%= form_for @agence do |a| %>
-
-    <%= a.label :raison_sociale %> <%= a.text_field :raison_sociale %><br>
-    <%= a.label :responsable %>       <%= a.text_field :responsable %><br>
-    <%= a.label :telephone %>  <%= a.text_field :telephone %><br>
-    <%= a.label :progouinon %>  <%= a.select :progouinon, ["Oui","Non"] %><br>
-    <%= a.label :email %>  <%= a.text_field :email %><br>
-    <%= a.label :rappelouinon %>
-    <%= a.label :adresse %>  <%= a.text_field :adresse %><br>
-    <%= a.label :cp %>  <%= a.text_field :cp %><br>
-
-    Rappeler le : | <%= a.text_field :rappelouinon %><br> | le |<%= a.datetime_select :rappel %>|<br>
-
-    <br>
-
-     <%= a.submit %>
-
-  <% end %>
-
+<%= render 'new_edit_agence' %>
 </div>
 
 
