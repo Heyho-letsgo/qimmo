@@ -31,14 +31,13 @@ gem 'jbuilder', '~> 1.2'
 gem 'ransack'
 gem 'bootstrap_form'
 gem 'bootstrap-sass'
-gem 'protected_attributes' # https://github.com/rails/protected_attributes
-
 
 gem 'rails_bootstrap_navbar'
 gem 'kaminari'
 
 gem 'jazz_hands'
 # jazz hand permet d'afficher de façon organisée les lignes de la consoles https://github.com/nixme/jazz_hands
+# To use, run Hirb.enable in the console.
 gem 'quiet_assets'
 # quiet asset allège l'affichage des données du terminal https://github.com/evrone/quiet_assets
 gem 'annotate'
@@ -56,7 +55,9 @@ gem 'pg', group: :production
 
 
 group :development do
-  gem 'pry'
+  gem 'jazz_hands'
+# jazz hand permet d'afficher de façon organisée les lignes de la consoles https://github.com/nixme/jazz_hands
+# To use, run Hirb.enable in the console.
   gem 'rails_layout'
 end
 

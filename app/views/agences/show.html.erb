@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container" xmlns="http://www.w3.org/1999/html">
   <%= render 'nav_agence_show' %>
-  show<br>
+  <h1>Show</h1><br>
 
   <div class="panel panel-default">
     <!-- Default panel contents -->
@@ -8,29 +8,86 @@
 
 
     <table class="table">
-      <tr>
+
       <div class="row">
-        <div class="span2"><%= @agence.raison_sociale %></div>
-        <div class="span2"><%= @agence.responsable %></div>
+        <div class="span3"><%= @agence.raison_sociale %></div>
+        <div class="span3"><%= @agence.responsable %></div>
       </div>
+
       <div class="row">
         <div class="span3">Téléphone : <%= @agence.telephone %></div>
         <div class="span3"><%= mail_to @agence.email %></div>
+      </div>
+
+      <div class="row">
         <div class="span3"><%= @agence.adresse %> </div>
         <div class="span3"><%= @agence.cp %></div>
         <div class="span3"><%= @agence.progouinon %></div>
       </div>
-     ²
   </div>
+  </table>
 </div>
 
-Rappeler : | <%= @agence.rappelouinon %>  | le |<%= @agence.rappel %>|<br>
 
-<hr>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Caractéristiques de la société.</div>
 
-Créée le : <%= @agence.created_at.strftime("%d/%m/%Y") %> | Maj le : <%= @agence.updated_at.strftime("%d/%m/%Y") %><br>
+  <table class="table">
+    <div class="row">
+       <div class="span3">Type de société : <%= @agence.type_soc %></div>
+       <div class="span3">Capital : <%=  number_to_currency(@agence.capital, locale: :fr) %></div>
+       <div class="span3">Garantie Financière : <%=  number_to_currency(@agence.gar_fi, locale: :fr) %></div>
+    </div>
+    <div class="row">
+      <div class="span12"></div>
+    </div>
+  </table>
+
+</div>
+<% # formatage des nombres http://api.rubyonrails.org/classes/ActionView/Helpers/NumberHelper.html#method-i-number_to_currency %>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Critères de recherche prédéfinis.</div>
+  <table class="table">
+    <div class="row">
+      <div class="span3">Secteur : <%= @agence.secteur %></div>
+      <div class="span3">% de recherche sur surface (+/-) : <%=  number_to_percentage(@agence.marge_surf_agence, locale: :fr, precision: 0) %></div>
+      <div class="span3">% de recherche sur prix (+/-) : <%=  number_to_percentage(@agence.marge_prix_agence, locale: :fr, precision: 0) %></div>
+    </div>
+    <div class="row">
+      <div class="span12"></div>
+    </div>
+  </table>
+
+</div>
 
 
 
+
+
+
+
+
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Interventions sur la fiche <%= @agence.raison_sociale %></div>
+
+  <table class="table">
+    <div class="row">
+      <div class="span12"> Rappeler : | <%= @agence.rappelouinon %>  | le |<%= @agence.rappel %>|
+      </div>
+    </div>
+    <div class="row">
+      <div class="span12">
+        Créée le : <%= @agence.created_at.strftime("%d/%m/%Y") %> | Maj le
+        : <%= @agence.updated_at.strftime("%d/%m/%Y") %>
+        <br>
+      </div>
+    </div>
+  </table>
+
+</div>
 </div>
 

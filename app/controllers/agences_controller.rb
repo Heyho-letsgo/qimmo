@@ -50,8 +50,25 @@ class AgencesController < ApplicationController
 
   # On déclare une variable qui déclare les rubriques autorisées à passer
   def agence_params
-    params.require(:agence).permit(:raison_sociale, :responsable, :telephone, :progouinon, :created_at, :updated_at,
-                                   :email, :rappelerouinon, :adresse, :cp, :rappelouinon)
+    params.require(:agence).permit(:raison_sociale,
+                                   :responsable,
+                                   :telephone,
+                                   :progouinon,
+                                   :created_at,
+                                   :updated_at,
+                                   :email,
+                                   :rappelouinon,
+                                   :adresse,
+                                   :cp,
+                                   :rappel,
+                                   :type_soc,
+                                   :capital,
+                                   :gar_fi,
+                                   :secteur,
+                                   :marge_surf_agence,
+                                   :marge_prix_agence,
+                                   :logo
+    )
   end
 
 
