@@ -77,7 +77,10 @@
 
   <table class="table">
     <div class="row">
-      <div class="span12">Rappeler : <%= @agence.rappelouinon %> le <%= @agence.rappel.strftime("%d/%m/%y") %> Créée le : <%= @agence.created_at.strftime("%d/%m/%y") %> Maj le : <%= @agence.updated_at.strftime("%d/%m/%y") %>
+      <div class="span3">Rappeler : <%= @agence.rappelouinon %></div>
+      <div class="span3">  le <%= @agence.rappel.strftime("%d/%m/%y") %></div>
+      <div class="span3">  Créée le : <%= @agence.created_at.strftime("%d/%m/%y") %></div>
+      <div class="span3">  Maj le : <%= @agence.updated_at.strftime("%d/%m/%y") %></div>
     </div>
   </table>
 </div>

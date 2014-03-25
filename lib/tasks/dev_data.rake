@@ -13,14 +13,15 @@ namespace :dev_data do
         email:'adresse@.com',
         adresse:'55 rue Bélliard',
         cp:'75018',
-        rappel:'',
+        rappel:'Oui',
+        rappel:Time.now + 10.days,
         type_soc:'Sarl',
         capital:10000,
         gar_fi:50000,
         secteur:'Abbesses',
         marge_surf_agence:10,
         marge_prix_agence:10,
-          logo:'Upload du logo'
+        logo:'Upload du logo'
         )
     if Agence.all.count > 0
       puts "Agences créés"
