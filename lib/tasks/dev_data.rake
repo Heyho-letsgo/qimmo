@@ -3,7 +3,6 @@ namespace :dev_data do
   task create: :environment do
 
     Rake::Task['db:reset'].invoke
-#    Rake::Task['db:schema:load'].invoke
 
     Agence.create!(
         raison_sociale:'Agence 01',

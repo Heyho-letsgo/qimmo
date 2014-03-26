@@ -2,9 +2,35 @@
   <% # = render 'nav_agence_show' %>
 
   <div class="row">
-    <h1 class="text-left">Nouvelle agence</h1>
-
     <%= form_for @agence do |a| %>
+
+
+
+        <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading"><h1>Edition de la fiche de l'agence : <%= @agence.raison_sociale %></h1></div>
+
+
+          <table class="table">
+
+            <div class="row">
+              <div class="span3"><%= a.text_field :raison_sociale %></div>
+              <div class="span3"><%= a.text_field :responsable %></div>
+            </div>
+
+            <div class="row">
+              <div class="span3">Téléphone : <%= @agence.telephone %></div>
+              <div class="span3"><%= mail_to @agence.email %></div>
+            </div>
+
+            <div class="row">
+              <div class="span3"><%= @agence.adresse %> </div>
+              <div class="span3"><%= @agence.cp %></div>
+              <div class="span3"><%= @agence.progouinon %></div>
+            </div>
+        </div>
+        </table>
+        </div>
 
         <%= a.label :raison_sociale %> <%= a.text_field :raison_sociale %><br>
         <%= a.label :responsable %>       <%= a.text_field :responsable %><br>
