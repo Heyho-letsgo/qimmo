@@ -20,8 +20,28 @@ class ProprietairesController < ApplicationController
 
  def create
    # à la diférence de update, on a pas encore d'id, donc on ne peux pas rappeler laligne par son id
-   # On déclare une variable qui déclare les rubriques autorisées à passer
-   proprietaire_params = params.require(:proprietaire).permit(:civilite,
+
+   # On rajoute la référence concernée (@proprietaire.new)en mettant à jour les paramètres concernés
+   @proprietaire = Proprietaire.create(proprietaire_params)
+   redirect_to @proprietaire
+ end
+
+ def edit
+   @proprietaire = Proprietaire.find(params[:id])
+ end
+
+ def update
+   # Dans un premier temps, on réactive la donnée concernée
+   @proprietaire = Proprietaire.find(params[:id])
+   # On met à jour la référence concernée (@proprietaire.update)en mettant à jour les paramètres concernés
+   @proprietaire.update(proprietaire_params)
+   redirect_to @proprietaire
+ end
+ private
+
+ # On déclare une variable qui déclare les rubriques autorisées à passer
+ def proprietaire_params
+     proprietaire_params = params.require(:proprietaire).permit(:civilite,
                                                               :prenom,
                                                               :nom,
                                                               :num_voie,   :voie,
@@ -34,24 +54,11 @@ class ProprietairesController < ApplicationController
                                                               :tel_bur,
                                                               :email)
 
-   # On rajoute la référence concernée (@proprietaire.new)en mettant à jour les paramètres concernés
-   @proprietaire = Proprietaire.create(proprietaire_params)
-   redirect_to @proprietaire
- end
-
- def edit
-   @proprietaire = Proprietaire.find(params[:id])
- end
+end
 
 
 
- def update
-   # Dans un premier temps, on réactive la donnée concernée
-   @proprietaire = Proprietaire.find(params[:id])
-   # On met à jour la référence concernée (@proprietaire.update)en mettant à jour les paramètres concernés
-   @proprietaire.update(proprietaire_params)
-   redirect_to @proprietaire
- end
+
  end
 
 

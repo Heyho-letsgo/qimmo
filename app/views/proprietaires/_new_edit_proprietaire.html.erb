@@ -1,16 +1,27 @@
 <div class="container" xmlns="http://www.w3.org/1999/html">
 
-  <%= form_for @proprietaire do |p| %>
+  <%= form_for @proprietaire do |a| %>
 
       <table class="table">
         <div class="row">
-          <div class="col-lg-12">Coordonées du propriétaire</div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12"><%= p.text_field :nom, autofocus: true, placeholder: 'Nom du propriétaire', :style => 'color:red; width:300px' %></div>
+          <div class="col-lg-12">Coordonées du proprietaire : </div>
         </div>
 
-      <%= p.submit %>
+        <div class="row">
+          <div class="col-lg-12"><%= a.text_field :nom, autofocus: true, placeholder: 'Nom', :style => 'color:red; width:300px' %></div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-2"><%= a.text_field :civilite, placeholder: 'Civilite' %></div>
+          <div class="col-lg-2"><%= a.text_field :prenom, placeholder: 'Prénom' %></div>
+          <div class="col-lg-2"><%= a.text_field :nom, placeholder: 'Nom' %></div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-2"></div>
+      </div>
+
+      </table>
+      <%= a.submit %>
 
   <% end %>
 </div>
