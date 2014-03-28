@@ -1,5 +1,7 @@
 Qimmo::Application.routes.draw do
 
+  resources :proprietaires
+
   resources :codepostals
 
   resources :acquereurs

@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  civilite: MyString
+  prenom: MyString
+  nom: MyString
+  num_voie: MyString
+  voie: MyString
+  adresse: MyString
+  cp: MyString
+  ville: MyString
+  pays: MyString
+  tel_dom: MyString
+  tel_port: MyString
+  tel_bur_string: MyString
+  email: MyString
+
+two:
+  civilite: MyString
+  prenom: MyString
+  nom: MyString
+  num_voie: MyString
+  voie: MyString
+  adresse: MyString
+  cp: MyString
+  ville: MyString
+  pays: MyString
+  tel_dom: MyString
+  tel_port: MyString
+  tel_bur_string: MyString
+  email: MyString

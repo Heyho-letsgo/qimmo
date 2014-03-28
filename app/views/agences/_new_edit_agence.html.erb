@@ -1,55 +1,41 @@
 <div class="container" xmlns="http://www.w3.org/1999/html">
-  <% # = render 'nav_agence_show' %>
 
-  <div class="row">
-    <%= form_for @agence do |a| %>
+  <%= form_for @agence do |a| %>
 
-
-
-        <div class="panel panel-default">
-          <!-- Default panel contents -->
-          <div class="panel-heading"><h1>Edition de la fiche de l'agence : <%= @agence.raison_sociale %></h1></div>
-
-
-          <table class="table">
-
-            <div class="row">
-              <div class="span3"><%= a.text_field :raison_sociale %></div>
-              <div class="span3"><%= a.text_field :responsable %></div>
-            </div>
-
-            <div class="row">
-              <div class="span3">Téléphone : <%= @agence.telephone %></div>
-              <div class="span3"><%= mail_to @agence.email %></div>
-            </div>
-
-            <div class="row">
-              <div class="span3"><%= @agence.adresse %> </div>
-              <div class="span3"><%= @agence.cp %></div>
-              <div class="span3"><%= @agence.progouinon %></div>
-            </div>
+      <table class="table">
+        <div class="row">
+          <div class="col-lg-12">Coordonées de l'agence : <%= @agence.raison_sociale %></div>
         </div>
-        </table>
+        <div class="row">
+          <div class="col-lg-12"><%= a.text_field :raison_sociale, autofocus: true, placeholder: 'Raison sociale', :style => 'color:red; width:300px' %></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2"><%= a.text_field :civilite, placeholder: 'Civilite' %></div>
+          <div class="col-lg-2"><%= a.text_field :responsable, placeholder: 'Nom du responsable', :style => 'text_align:left' %></div>
+          <div class="col-lg-2"><%= a.text_field :telephone, placeholder: 'Téléphone' %></div>
+          <div class="col-lg-2"><%= a.text_field :tel_port, placeholder: 'Portable' %></div>
+          <div class="col-lg-2"><%= a.text_field :email, placeholder: 'email' %></div>
+          <div class="col-lg-2"></div>
+
+
+        </div>
+        <div class="row">
+          <div class="col-lg-2"><%= a.text_field :num_voie, placeholder: 'numéro de voie' %></div>
+          <div class="col-lg-2"><%= a.text_field :voie, placeholder: 'Voie' %></div>
+          <div class="col-lg-2"><%= a.text_field :adresse, placeholder: 'adresse' %></div>
+          <div class="col-lg-2"><%= a.text_field :cp, placeholder: 'Code postal' %></div>
+          <div class="col-lg-2"><%= a.text_field :ville, placeholder: 'Ville' %></div>
+          <div class="col-lg-2"><%= a.text_field :pays, placeholder: 'Pays' %></div>
         </div>
 
-        <%= a.label :raison_sociale %> <%= a.text_field :raison_sociale %><br>
-        <%= a.label :responsable %>       <%= a.text_field :responsable %><br>
-        <%= a.label :telephone %>  <%= a.text_field :telephone %><br>
-        <%= a.label :progouinon %>  <%= a.select :progouinon, ["Oui","Non"] %><br>
-        <%= a.label :email %>  <%= a.text_field :email %><br>
-        <%= a.label :rappelouinon %>
-        <%= a.label :adresse %>  <%= a.text_field :adresse %><br>
-        <%= a.label :cp %>  <%= a.text_field :cp %><br>
+      </table>
 
-        Rappeler le : | <%= a.text_field :rappelouinon %><br> | le |<%= a.datetime_select :rappel %>|<br>
+      Rappeler le : | <%= a.text_field :rappelouinon %>
+      <br> | le |<%= a.datetime_select :rappel %>|<br>
 
-        <br>
+      <br>
 
-        <%= a.submit %>
+      <%= a.submit %>
 
-    <% end %>
-  </div>
-
-
-
+  <% end %>
 </div>

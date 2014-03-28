@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140325113955) do
+ActiveRecord::Schema.define(version: 20140328085618) do
 
   create_table "acquereurs", force: true do |t|
     t.string   "origine_rech"
@@ -52,6 +52,12 @@ ActiveRecord::Schema.define(version: 20140325113955) do
     t.integer  "marge_surf_agence"
     t.integer  "marge_prix_agence"
     t.string   "logo"
+    t.string   "num_voie"
+    t.string   "voie"
+    t.string   "ville"
+    t.string   "pays"
+    t.string   "civilite"
+    t.string   "tel_port"
   end
 
   create_table "bienvenues", force: true do |t|
@@ -86,6 +92,24 @@ ActiveRecord::Schema.define(version: 20140325113955) do
 
   create_table "programmes", force: true do |t|
     t.string   "nom"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "proprietaires", force: true do |t|
+    t.string   "civilite"
+    t.string   "prenom"
+    t.string   "nom"
+    t.string   "num_voie"
+    t.string   "voie"
+    t.string   "adresse"
+    t.string   "cp"
+    t.string   "ville"
+    t.string   "pays"
+    t.string   "tel_dom"
+    t.string   "tel_port"
+    t.string   "tel_bur_string"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

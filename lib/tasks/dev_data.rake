@@ -1,13 +1,16 @@
 namespace :dev_data do
   desc "Remplir  la base de donnees"
-  task create: :environment do
+  task populate: :environment do
 
     Rake::Task['db:reset'].invoke
+    #Rake::Task['db:migrate:reset'].invoke
 
     Agence.create!(
         raison_sociale:'Agence 01',
+        civilite:'Monsieur',
         responsable:'Andre 01',
         telephone:'0951770063',
+        tel_port:'0634235612',
         progouinon:'oui',
         email:'adresse@.com',
         adresse:'55 rue Bélliard',
@@ -20,7 +23,11 @@ namespace :dev_data do
         secteur:'Abbesses',
         marge_surf_agence:10,
         marge_prix_agence:10,
-        logo:'Upload du logo'
+        logo:'Upload du logo',
+        num_voie:'25 ter',
+        voie: 'Avenue',
+        ville: 'Paris',
+        pays: 'France'
         )
     if Agence.all.count > 0
       puts "Agences créés"
@@ -50,6 +57,23 @@ namespace :dev_data do
     if Groupe.all.count > 5
       puts "Groupes créés"
     end
+
+# On crée les propriétaires
+
+    i=1
+    while i <= 20
+    Proprietaire.create!(
+         nom:"Nom proprietaire #{i}"
+                )
+    i+=1
+    end
+
+    if Proprietaire.all.count > 1
+      puts "Proprietaire créés"
+    end
+
+
+
 
   end
 end

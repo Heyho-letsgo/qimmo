@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+
+  <div class="panel-heading">Liste des propriétaires  <%= paginate @proprietaires %></div>
+  <!-- Table -->
+  <table class="table table-hover table-condensed table-striped">
+
+    <tr>
+      <th><%= sort_link @search, :id, "id" %></th>
+      <th><%= sort_link @search, :nom, "Nom" %></th>
+
+    </tr>
+    <% @proprietaires.each do |p| %>
+        <tr>
+          <td> <%= link_to p.id, p %></td>
+          <td> <%= link_to p.nom, p %></td>
+        </tr>
+    <% end %>
+  </table>
+</div>

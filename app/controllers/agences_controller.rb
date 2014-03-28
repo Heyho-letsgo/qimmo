@@ -42,7 +42,6 @@ class AgencesController < ApplicationController
 
     # On rajoute la référence concernée (@movie.new)en mettant à jour les paramètres concernés
   @agence = Agence.create(agence_params)
-  #@agence.save
   redirect_to @agence
   end
 
@@ -67,7 +66,13 @@ class AgencesController < ApplicationController
                                    :secteur,
                                    :marge_surf_agence,
                                    :marge_prix_agence,
-                                   :logo
+                                   :logo,
+                                   :num_voie,
+                                   :voie,
+                                   :ville,
+                                   :pays,
+                                   :tel_port,
+                                   :civilite
     )
   end
 

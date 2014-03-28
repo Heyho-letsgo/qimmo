@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby "2.0.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
-
+gem 'thin'
 # Use sqlite3 as the database for Active Record
 
 
@@ -35,9 +35,7 @@ gem 'bootstrap-sass'
 gem 'rails_bootstrap_navbar'
 gem 'kaminari'
 
-gem 'jazz_hands'
-# jazz hand permet d'afficher de façon organisée les lignes de la consoles https://github.com/nixme/jazz_hands
-# To use, run Hirb.enable in the console.
+
 gem 'quiet_assets'
 # quiet asset allège l'affichage des données du terminal https://github.com/evrone/quiet_assets
 gem 'annotate'

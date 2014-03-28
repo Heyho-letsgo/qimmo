@@ -34,9 +34,9 @@
 
   <table class="table">
     <div class="row">
-       <div class="span3">Type de société : <%= @agence.type_soc %></div>
-       <div class="span3">Capital : <%=  number_to_currency(@agence.capital, locale: :fr) %></div>
-       <div class="span3">Garantie Financière : <%=  number_to_currency(@agence.gar_fi, locale: :fr) %></div>
+      <div class="span3">Type de société : <%= @agence.type_soc %></div>
+      <div class="span3">Capital : <%= number_to_currency(@agence.capital, locale: :fr) %></div>
+      <div class="span3">Garantie Financière : <%= number_to_currency(@agence.gar_fi, locale: :fr) %></div>
     </div>
     <div class="row">
       <div class="span12"></div>
@@ -46,23 +46,23 @@
 </div>
 
 
-<% # formatage des nombres http://api.rubyonrails.org/classes/ActionView/Helpers/NumberHelper.html#method-i-number_to_currency %>
+<% # formatage des nombres http://api.rubyonrails.org/classes/ActionView/Helpers/NumberHelper.html#method-i-number_to_currency  %>
 <div class="panel panel-default">
   <div class="panel-heading">Critères de recherche prédéfinis.</div>
-        <div class="panel-heading">Secteurs.</div>
-            <div class="row">
-                <div class="span12"><%= @agence.secteur %></div>
-            </div>
-    <div class="panel-heading">Code postaux.</div>
-          <div class="row">
-            <div class="span12">75018</div>
-          </div>
-    <div class="panel-heading">Pourcentage de recherche sur .</div>
-        <div class="row">
-          <div class="span3">Surface : <%=  number_to_percentage(@agence.marge_surf_agence, locale: :fr, precision: 0) %></div>
-          <div class="span3">Prix : <%=  number_to_percentage(@agence.marge_prix_agence, locale: :fr, precision: 0) %></div>
-        </div>
- </div>
+  <div class="panel-heading">Secteurs.</div>
+  <div class="row">
+    <div class="span12"><%= @agence.secteur %></div>
+  </div>
+  <div class="panel-heading">Code postaux.</div>
+  <div class="row">
+    <div class="span12">75018</div>
+  </div>
+  <div class="panel-heading">Pourcentage de recherche sur .</div>
+  <div class="row">
+    <div class="span3">Surface : <%= number_to_percentage(@agence.marge_surf_agence, locale: :fr, precision: 0) %></div>
+    <div class="span3">Prix : <%= number_to_percentage(@agence.marge_prix_agence, locale: :fr, precision: 0) %></div>
+  </div>
+</div>
 
 
 
@@ -78,9 +78,9 @@
   <table class="table">
     <div class="row">
       <div class="span3">Rappeler : <%= @agence.rappelouinon %></div>
-      <div class="span3">  le <%= @agence.rappel.strftime("%d/%m/%y") %></div>
-      <div class="span3">  Créée le : <%= @agence.created_at.strftime("%d/%m/%y") %></div>
-      <div class="span3">  Maj le : <%= @agence.updated_at.strftime("%d/%m/%y") %></div>
+      <div class="span3"> le <%= @agence.rappel.strftime("%d/%m/%y") %></div>
+      <div class="span3"> Créée le : <%= @agence.created_at.strftime("%d/%m/%y") %></div>
+      <div class="span3"> Maj le : <%= @agence.updated_at.strftime("%d/%m/%y") %></div>
     </div>
   </table>
 </div>

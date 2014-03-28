@@ -1,0 +1,13 @@
+
+[1mFrom:[0m /home/andrew/workspace/ror/qimmo/app/controllers/agences_controller.rb @ line 32 AgencesController#update:
+
+    [1;34m27[0m: [32mdef[0m [1;34mupdate[0m
+    [1;34m28[0m:   [1;30m# Dans un premier temps, on réactive la donnée concernée[0m
+    [1;34m29[0m:   @agence = [1;34;4mAgence[0m.find(params[[33m:id[0m])
+    [1;34m30[0m:   [1;30m# On met à jour la référence concernée (@agence.update)en mettant à jour les paramètres concernés[0m
+    [1;34m31[0m:   @agence.update(agence_params)
+ => [1;34m32[0m:   binding.pry
+    [1;34m33[0m: 
+    [1;34m34[0m:   redirect_to @agence
+    [1;34m35[0m: [32mend[0m
+

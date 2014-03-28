@@ -1,0 +1,9 @@
+<div class="row"></div>
+<%= search_form_for @search do |f| %>
+      <div class="panel-heading"></div>
+            <div class="span2"><%= f.text_field :nom_cont, :class => "form-control", :placeholder => 'Nom du propriétaire' %></div>          </div>
+          <div class="span1"> <%= f.submit "Recherche" %> </div>
+<% end %>
+
+
+
