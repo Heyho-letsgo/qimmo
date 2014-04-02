@@ -1,14 +1,10 @@
-
-  <%= search_form_for @search do |g| %>
-
-      <div class="panel panel-default">
+ <%= search_form_for @search do |g| %>
+     <div class="panel panel-default">
         <!-- Default panel contents -->
         <div class="panel-heading">Recherche de groupe</div>
         <!-- Table -->
         <table class="table">
-
           <tr>
-
             <div class="row"><br>
 
               <div class="span2"> <%= g.text_field :nom_cont, :class => "form-control", :placeholder => 'Nom du groupe' %></div>

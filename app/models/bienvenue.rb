@@ -7,5 +7,5 @@
 #  updated_at :datetime
 #
 
-class Bienvenue < ActiveRecord::Base
+class connexion < ActiveRecord::Base
 end

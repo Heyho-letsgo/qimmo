@@ -1,11 +1,5 @@
 Qimmo::Application.routes.draw do
 
-  resources :proprietaires
-
-  resources :codepostals
-
-  resources :acquereurs
-
   #resources :users
   root "bienvenues#index"
   #resources :bienvenues
@@ -13,6 +7,10 @@ Qimmo::Application.routes.draw do
   resources :programmes
   resources :agences
   resources :utilisateurs
+  resources :proprietaires
+  resources :codepostals
+  resources :acquereurs
+  resources :accounts
 
 
   # The priority is based upon order of creation: first created -> highest priority.

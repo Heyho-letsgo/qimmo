@@ -8,12 +8,15 @@
     <tr>
       <th><%= sort_link @search, :id, "id" %></th>
       <th><%= sort_link @search, :nom, "Nom" %></th>
-
+      <th><%= sort_link @search, :adresse, "Adresse" %></th>
+      <th><%= sort_link @search, :adresse, "Contacts" %></th>
     </tr>
     <% @proprietaires.each do |p| %>
         <tr>
           <td> <%= link_to p.id, p %></td>
-          <td> <%= link_to p.nom, p %></td>
+          <td> <%= link_to "#{p.civilite} #{p.prenom} #{p.nom}", p %></td>
+          <td> <%= " #{p.num_voie},  #{p.voie} #{p.adresse} #{p.cp} #{p.ville} #{p.pays}"  %></td>
+          <td> <%= " #{p.tel_dom},  #{p.tel_port} #{p.tel_bur_string} #{p.email}"  %></td>
         </tr>
     <% end %>
   </table>
