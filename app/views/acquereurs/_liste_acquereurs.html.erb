@@ -1,0 +1,39 @@
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+
+  <div class="panel-heading">Liste des acquéreurs |  <%= paginate @acquereurs %></div>
+  <!-- Table -->
+  <table class="table table-hover table-condensed table-striped">
+
+    <tr>
+      <th><%= sort_link @search, :id, "id" %></th>
+      <th><%= sort_link @search, :civilite, "Civilite" %></th>
+      <th><%= sort_link @search, :prenom, "Prénom" %></th>
+      <th><%= sort_link @search, :nom, "Nom" %></th>
+      <th>progouinon</th>
+      <th>created_at</th>
+      <th>updated_at</th>
+      <th>email</th>
+      <th>rappeleouinon</th>
+      <th>rappel</th>
+      <th>adresse</th>
+      <th>cp</th>
+    </tr>
+    <% @acquereurs.each do |a| %>
+        <tr>
+          <td> <%= link_to a.id, a %></td>
+          <td> <%= link_to a.civilite, a %></td>
+          <td> <%= a.nom %></td>
+          <td> <%= a.prenom %></td>
+          <td> <%= a.nom %></td>
+          <td> <%= a.prenom %></td>
+          <td> <%= a.nom %></td>
+          <td> <%= a.prenom %></td>
+          <td> <%= a.nom %></td>
+          <td> <%= a.prenom %></td>
+          <td> <%= a.nom %></td>
+          <td> <%= a.prenom %></td>
+        </tr>
+    <% end %>
+  </table>
+</div>

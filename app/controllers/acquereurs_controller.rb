@@ -1,11 +1,11 @@
 class AcquereursController < ApplicationController
   before_action :set_acquereur, only: [:show, :edit, :update, :destroy]
 
-  # GET /acquereurs
-  # GET /acquereurs.json
   def index
-    @acquereurs = Acquereur.all
+    @search = Acquereur.search(params[:q])
+    @acquereurs = @search.result.page(params[:page]).per(5)
   end
+
 
   # GET /acquereurs/1
   # GET /acquereurs/1.json
