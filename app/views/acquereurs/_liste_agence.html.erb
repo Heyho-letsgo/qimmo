@@ -1,0 +1,39 @@
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+
+  <div class="panel-heading">Liste des agences |  <%= paginate @agences %></div>
+  <!-- Table -->
+  <table class="table table-hover table-condensed table-striped">
+
+    <tr>
+      <th><%= sort_link @search, :id, "id" %></th>
+      <th><%= sort_link @search, :raison_sociale, "Raisons sociale" %></th>
+      <th><%= sort_link @search, :responsable, "Responsable" %></th>
+      <th><%= sort_link @search, :telephone, "Téléphone" %></th>
+      <th>progouinon</th>
+      <th>created_at</th>
+      <th>updated_at</th>
+      <th>email</th>
+      <th>rappeleouinon</th>
+      <th>rappel</th>
+      <th>adresse</th>
+      <th>cp</th>
+    </tr>
+    <% @agences.each do |a| %>
+        <tr>
+          <td> <%= link_to a.id, a %></td>
+          <td> <%= link_to a.raison_sociale, a %></td>
+          <td> <%= a.responsable %></td>
+          <td> <%= a.telephone %></td>
+          <td> <%= a.progouinon %></td>
+          <td> <%= a.created_at.strftime("%d/%m/%Y") %></td>
+          <td> <%= a.updated_at.strftime("%d/%m/%Y") %></td>
+          <td> <%= mail_to a.email, "@" if a.email !="" %></td>
+          <td> <%= a.rappelouinon %></td>
+          <td> <%= a.rappel.strftime("%d/%m/%Y") unless a.rappel.nil? %></td>
+          <td> <%= a.adresse %></td>
+          <td> <%= a.cp %></td>
+        </tr>
+    <% end %>
+  </table>
+</div>

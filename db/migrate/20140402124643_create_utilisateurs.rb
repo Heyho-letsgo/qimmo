@@ -4,7 +4,7 @@ class CreateUtilisateurs < ActiveRecord::Migration
 
       t.string :login
       t.string :mdp
-      t.string :ip
+
       t.string :civilite
       t.string :prenom
       t.string :nom

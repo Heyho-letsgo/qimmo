@@ -11,14 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140402124643) do
-
-  create_table "utilisateurs", force: true do |t|
-    t.string   "login"
-    t.string   "mdp"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20140403080406) do
 
   create_table "acquereurs", force: true do |t|
     t.string   "origine_rech"
@@ -65,6 +58,12 @@ ActiveRecord::Schema.define(version: 20140402124643) do
     t.string   "pays"
     t.string   "civilite"
     t.string   "tel_port"
+  end
+
+  create_table "biens", force: true do |t|
+    t.string   "mandat_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "bienvenues", force: true do |t|
@@ -124,7 +123,6 @@ ActiveRecord::Schema.define(version: 20140402124643) do
   create_table "utilisateurs", force: true do |t|
     t.string   "login"
     t.string   "mdp"
-    t.string   "ip"
     t.string   "civilite"
     t.string   "prenom"
     t.string   "nom"

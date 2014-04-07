@@ -47,8 +47,8 @@ namespace :dev_data do
           nom: "Groupe Pierre Habitat #{i+1}",
           ville: "Paris#{i+1}",
           num_rue: "#{i+1}",
-          type_voie: "rue",
-          adresse: "adresse#{i+1}",
+          type_voie:"rue",
+          adresse:"adresse#{i+1}",
           cp: "75#{i+1}",
           ville: "Paris#{i+1}",
           tel: "075177006#{i+1}",
@@ -96,6 +96,7 @@ namespace :dev_data do
       login:"login",
       mdp: "mdp",
       prenom: "Paul",
+      nom: "Lathuile",
       email: "pl@exemple.com",
       tel_port: "0623456781"
     )
@@ -103,6 +104,18 @@ namespace :dev_data do
       puts "Utilisateur créé"
     end
 
+
+
+  Acquereur.create!(
+      civilite:"Monsieur",
+      prenom: "Paul",
+      nom: "Lathuile"
+  )
+  if Acquereur.all.count == 1
+    puts "Acquéreur créé"
   end
 
   end
+
+end
+

@@ -1,55 +1,6 @@
-<h1>Listing acquereurs</h1>
+<div class="container">
+<h1>Acquereurs index</h1>
+  <%= render partial: 'nav_acquereurs_index' %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Origine rech</th>
-      <th>Civilite</th>
-      <th>Prenom</th>
-      <th>Nom</th>
-      <th>Num rue</th>
-      <th>Type rue</th>
-      <th>Adresse</th>
-      <th>Cp</th>
-      <th>Ville</th>
-      <th>Tel princ</th>
-      <th>Tel type</th>
-      <th>Email princ</th>
-      <th>Email type</th>
-      <th>Fax princ</th>
-      <th>R cp</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @acquereurs.each do |acquereur| %>
-      <tr>
-        <td><%= acquereur.origine_rech %></td>
-        <td><%= acquereur.civilite %></td>
-        <td><%= acquereur.prenom %></td>
-        <td><%= acquereur.nom %></td>
-        <td><%= acquereur.num_rue %></td>
-        <td><%= acquereur.type_rue %></td>
-        <td><%= acquereur.adresse %></td>
-        <td><%= acquereur.cp %></td>
-        <td><%= acquereur.ville %></td>
-        <td><%= acquereur.tel_princ %></td>
-        <td><%= acquereur.tel_type %></td>
-        <td><%= acquereur.email_princ %></td>
-        <td><%= acquereur.email_type %></td>
-        <td><%= acquereur.fax_princ %></td>
-        <td><%= acquereur.r_cp %></td>
-        <td><%= link_to 'Show', acquereur %></td>
-        <td><%= link_to 'Edit', edit_acquereur_path(acquereur) %></td>
-        <td><%= link_to 'Destroy', acquereur, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Acquereur', new_acquereur_path %>
+  <%= render partial: 'search_aquereurs' %>
+</div>

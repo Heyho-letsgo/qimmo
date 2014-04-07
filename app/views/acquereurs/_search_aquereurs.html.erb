@@ -1,0 +1,28 @@
+<%= search_form_for @search do |f| %>
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading"><%= render 'nav_acquereurs_index' %></div>
+      <!-- Table -->
+      <table class="table">
+        <tr>
+          <div class="row"><br>
+
+            <div class="span2"><%= f.text_field :civilite_cont, :class => "form-control", :placeholder => 'Civilite' %></div>
+            <div class="span2"><%= f.text_field :prenom_cont, :class => "form-control", :placeholder => 'Prénom' %></div>
+            <div class="span2"><%= f.text_field :nom_cont, :class => "form-control", :placeholder => 'Nom' %></div>
+
+          </div>
+        </tr>
+        <div class="row">
+          <br>
+        </div>
+        <div class="row">
+          <div class="span1"> <%= f.submit "Recherche" %> </div>
+          <div class="offset9"></div>
+        </div>
+        <div class="row">
+          <br>
+        </div>
+      </table>
+    </div>
+<% end %>
