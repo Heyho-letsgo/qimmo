@@ -1,2 +1,4 @@
 class Bien < ActiveRecord::Base
-end
+  belongs_to :proprietaire
+  belongs_to :utilisateur
+  end

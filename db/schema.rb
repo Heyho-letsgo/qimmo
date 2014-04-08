@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140403080406) do
+ActiveRecord::Schema.define(version: 20140407135646) do
 
   create_table "acquereurs", force: true do |t|
     t.string   "origine_rech"
@@ -31,6 +31,23 @@ ActiveRecord::Schema.define(version: 20140403080406) do
     t.string   "r_cp"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "utilisateur"
+    t.string   "reference"
+    t.string   "categorie"
+    t.string   "secteur"
+    t.integer  "piece"
+    t.integer  "chambre"
+    t.integer  "surf_min"
+    t.integer  "surf_max"
+    t.integer  "prix_min"
+    t.integer  "prix_max"
+    t.integer  "etage_min"
+    t.integer  "etage_max"
+    t.string   "remarques"
+    t.string   "desistement"
+    t.string   "dernier_etage"
+    t.string   "ascenceur"
+    t.string   "offre"
   end
 
   create_table "agences", force: true do |t|

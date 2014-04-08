@@ -1,7 +1,8 @@
 Qimmo::Application.routes.draw do
 
-  #resources :users
   root "bienvenues#index"
+  get "bienvenues/login"
+
   #resources :bienvenues
   resources :groupes
   resources :programmes

@@ -23,5 +23,6 @@
 #
 
 class Acquereur < ActiveRecord::Base
+  belongs_to :utilisateur
   has_and_belongs_to_many :codepostals
 end

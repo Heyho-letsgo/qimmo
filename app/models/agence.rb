@@ -25,6 +25,8 @@
 
 class Agence < ActiveRecord::Base
   belongs_to :groupe
-  has_many :users
+  has_many :utilisateurs
+  has_many :biens
+  has_many :acquereurs
 end
 

@@ -24,7 +24,9 @@
 class Groupe < ActiveRecord::Base
   #validates_presence_of :cp
   has_many :agences
-
+  has_many :utilisateurs
+  has_many :biens
+  has_many :acquereurs
 
 
 
